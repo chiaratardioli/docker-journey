@@ -36,7 +36,9 @@ First, I manual created an image repository called `getting-started-todo-app` on
 
 ### Push Image in Docker Hub
 
-![Push Image repository on Docker Hub](./images/03-03-push-image-repository-hub.png)
+![Push Image repository](./images/03-03-push-image.png)
+
+![Push Image repository on Docker Hub](./images/03-04-push-image-repository-hub.png)
 
 ## What I learned
 
