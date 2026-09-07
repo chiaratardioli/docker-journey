@@ -31,3 +31,8 @@ An image registry is a centralized location for storing and sharing your contain
 
 Docker Compose allows applications composed of multiple containers, such as web applications, databases, and caches, to be defined and run together. Instead of managing each container separately with multiple `docker run` commands, the configuration is described in a single YAML file. Compose is a declarative tool: the file describes the desired state of the application, and `docker compose up` creates or updates the containers to match it. A Dockerfile defines how to build an image, while a Compose file defines how to configure and run the containers.
 
+5. **Image Layers**
+
+Docker images are composed of immutable layers, where each layer contains a set of filesystem changes, such as adding, deleting, or modifying files. For example, an image might include a base operating system, a Python runtime, application dependencies, and the application source code, each added in a separate layer. These layers can be reused between images, making builds faster and reducing storage and bandwidth usage. When a container starts, Docker stacks the image layers into a unified filesystem and adds a separate writable layer for the container’s changes, leaving the original image layers untouched. This allows multiple containers to run from the same image while maintaining their own filesystem changes.
+
+6. 
