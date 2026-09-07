@@ -25,7 +25,7 @@ docker compose down --volumes
 
 ## Results
 
-On a terminal I clone the repository `https://github.com/dockersamples/todo-list-app` and build the docker composer.
+On a terminal I clone the repository `https://github.com/dockersamples/todo-list-app` and build the docker compose.
 
 ```bash
 chiara$ git clone https://github.com/dockersamples/todo-list-app 
