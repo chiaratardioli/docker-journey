@@ -4,7 +4,7 @@ A collection of hands-on exercises to learn Docker through practical examples.
 
 Each lab documents what I learned and the commands I used.
 
-## List of labs
+## List of Labs
 
 1. [Welcome to docker](./docker-labs/01-welcome-to-docker)
 2. [Develop with containers](./docker-labs/02-develop-with-containers)
