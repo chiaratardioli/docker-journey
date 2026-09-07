@@ -111,46 +111,43 @@ base-container
 
 ### 2. Build the application image
 
-I started a new container from `node-base`:
+I started a new container from `node-base`. Then, inside the container, I created a simple Node.js application and I run the application.
 
 ```bash
-docker run --name=app-container -ti node-base
+chiara$ docker rm -f base-container
+base-container
+chiara$ docker run --name=app-container -ti node-base
+root@93e153fa4a3d:/# echo 'console.log("Hello from an app")' > app.js
+root@93e153fa4a3d:/# node app.js
+Hello from an app
+root@93e153fa4a3d:/# 
 ```
 
-Inside the container, I created a simple Node.js application:
+From another terminal, I saved the changes as a new image and set the default command. I inspected the image layers and run the application image.
 
 ```bash
-echo 'console.log("Hello from an app")' > app.js
-```
-
-I run the application:
-
-```bash
-node app.js
-```
-
-From the host terminal, I saved the changes as a new image and set the default command:
-
-```bash
-docker container commit -c "CMD node app.js" -m "Add app" app-container sample-app
-```
-
-I inspected the image layers:
-
-```bash
-docker image history sample-app
-```
-
-I run the application image:
-
-```bash
-docker run sample-app
+chiara$ docker container commit -c "CMD node app.js" -m "Add app" app-container sample-app
+sha256:9425826f806ac97014fa2490f29ad683a838d82d48df8ac34accd75c3daddc9f
+chiara$ docker image history sample-app
+IMAGE          CREATED          CREATED BY                                      SIZE      COMMENT
+9425826f806a   5 seconds ago    /bin/bash                                       16.4kB    Add app
+0a01c219b428   16 minutes ago   /bin/bash                                       172MB     Add node
+2260313b31c8   3 weeks ago      umoci raw add-layer --image /home/buildd/roc…   12.3kB    Add rock control metadata
+<missing>      3 weeks ago      umoci config --image /home/buildd/rockcraft-…   0B        Set annotations
+<missing>      3 weeks ago      umoci config --image /home/buildd/rockcraft-…   0B        Set labels
+<missing>      3 weeks ago      umoci config --image /home/buildd/rockcraft-…   0B        Set default PATH for bare-based rock
+<missing>      3 weeks ago      umoci config --image /home/buildd/rockcraft-…   0B        Set default commands
+<missing>      3 weeks ago      umoci config --image /home/buildd/rockcraft-…   0B        Set entrypoint
+<missing>      3 weeks ago      umoci raw add-layer --image /home/buildd/roc…   135MB     
+chiara$ docker run sample-app
+Hello from an app
 ```
 
 Eventually, I removed the application container:
 
 ```bash
-docker rm -f app-container
+chiara$ docker rm -f app-container
+app-container
 ```
 
 ## Results
