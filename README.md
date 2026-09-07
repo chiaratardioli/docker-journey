@@ -11,6 +11,7 @@ Each lab documents what I learned and the commands I used.
 3. [Build and push an image on Docker Hub](./docker-labs/03-build-and-push-docker-image)
 4. [Search and download an image](./docker-labs/04-search-and-download-image)
 5. [Docker Compose](./docker-labs/05-docker-compose)
+6. [Create a base image](docker-labs/06-create-a-base-image/readme.md)
 
 
 ## Core Concepts
