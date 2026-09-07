@@ -26,4 +26,7 @@ A Docker image is a read-only package containing everything needed to run an app
 
 An image registry is a centralized location for storing and sharing your container images. It can be either public or private. Docker Hub is a public registry that anyone can use and is the default registry. Other available image registries include Amazon Elastic Container Registry (ECR), Azure Container Registry (ACR), and Google Container Registry (GCR). It is also possible to run a private registry on your local system or inside your organization, using solutions such as Harbor, JFrog Artifactory, or GitLab Container Registry. A registry contains repositories, and each repository can contain multiple versions of an image identified by tags. This allows developers to build an image once, push it to a registry, and then pull and run it on another machine or environment.
 
-4. 
+4. **Docker Composer**
+
+Docker Compose allows applications composed of multiple containers, such as web applications, databases, and caches, to be defined and run together. Instead of managing each container separately with multiple `docker run` commands, the configuration is described in a single YAML file. Compose is a declarative tool: the file describes the desired state of the application, and `docker compose up` creates or updates the containers to match it. A Dockerfile defines how to build an image, while a Compose file defines how to configure and run the containers.
+
