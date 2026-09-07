@@ -27,7 +27,7 @@ I open the application at:
 
 http://localhost
 
-## Screenshots
+## Results
 
 ### Application running
 
