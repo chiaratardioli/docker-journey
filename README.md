@@ -10,6 +10,7 @@ Each lab documents what I learned and the commands I used.
 2. [Develop with containers](./docker-labs/02-develop-with-containers)
 3. [Build and push an image on Docker Hub](./docker-labs/03-build-and-push-docker-image)
 4. [Search and download an image](./docker-labs/04-search-and-download-image)
+5. [Docker Compose](./docker-labs/05-docker-compose)
 
 
 ## Core Concepts
