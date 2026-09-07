@@ -22,4 +22,8 @@ A container is an isolated process that packages an application with the files a
 
 A Docker image is a read-only package containing everything needed to run an application, including its code, dependencies, libraries, and configuration. Images are built in layers, which can be reused to make builds more efficient, and they serve as the foundation for creating containers. Unlike containers, images do not run by themselves; they are used to create and start containers. Images can be built from a Dockerfile, pulled from a registry such as Docker Hub, and shared with others.
 
-3. 
+3. **Docker Registry**
+
+An image registry is a centralized location for storing and sharing your container images. It can be either public or private. Docker Hub is a public registry that anyone can use and is the default registry. Other available image registries include Amazon Elastic Container Registry (ECR), Azure Container Registry (ACR), and Google Container Registry (GCR). It is also possible to run a private registry on your local system or inside your organization, using solutions such as Harbor, JFrog Artifactory, or GitLab Container Registry. A registry contains repositories, and each repository can contain multiple versions of an image identified by tags. This allows developers to build an image once, push it to a registry, and then pull and run it on another machine or environment.
+
+4. 
