@@ -1,4 +1,4 @@
-# Lab 03 — Build and Push Your First Image
+# Lab 03 — Build and Push an Image on Docker Hub
 
 ## Objective
 
