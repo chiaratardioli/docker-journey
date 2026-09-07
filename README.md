@@ -37,3 +37,7 @@ Docker Compose allows applications composed of multiple containers, such as web 
 Docker images are composed of immutable layers, where each layer contains a set of filesystem changes, such as adding, deleting, or modifying files. For example, an image might include a base operating system, a Python runtime, application dependencies, and the application source code, each added in a separate layer. These layers can be reused between images, making builds faster and reducing storage and bandwidth usage. When a container starts, Docker stacks the image layers into a unified filesystem and adds a separate writable layer for the container’s changes, leaving the original image layers untouched. This allows multiple containers to run from the same image while maintaining their own filesystem changes.
 
 6. 
+
+## References
+
+- [Get Started with Docker (official)](https://docs.docker.com/get-started/)
