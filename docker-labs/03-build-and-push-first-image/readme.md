@@ -26,7 +26,7 @@ docker push <DOCKER_USERNAME>/getting-started-todo-app
 
 ### Image repository in Docker Hub
 
-First, I created an image repository called `getting-started-todo-app` on my Docker Hub account.
+First, I manual created an image repository called `getting-started-todo-app` on my [Docker Hub](https://hub.docker.com) account.
 
 ![My image repository](./images/03-01-image-repository-hub.png)
 
