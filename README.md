@@ -7,3 +7,4 @@ Each lab documents what I learned and the commands I used.
 ## List of labs
 
 1. [Welcome to docker](./docker-labs/01-welcome-to-docker)
+2. [Develop with containers](./docker-labs/02-develop-with-containers)
