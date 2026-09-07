@@ -22,7 +22,7 @@ docker image ls
 docker push <DOCKER_USERNAME>/getting-started-todo-app
 ```
 
-## Screenshots
+## Results
 
 ### Image build
 
