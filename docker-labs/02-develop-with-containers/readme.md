@@ -31,7 +31,7 @@ http://localhost
 
 ### Application running
 
-![Application running](./images/01-01-app-running.md)
+![Application running](./images/01-01-app-running.png)
 
 ### Backend change
 
@@ -49,7 +49,7 @@ module.exports = async (req, res) => {
   });
 };
 ```
-![Backend change: Updated greeting](./images/01-02-updated-greeting.md)
+![Backend change: Updated greeting](./images/01-02-updated-greeting.png)
 
 ### Frontend change
 
@@ -74,7 +74,7 @@ body {
     font-family: 'Lato';
 }
 ```
-![Frontend change: Updated placeholder and color background](./images/01-03-updated-placeholder-background.md)
+![Frontend change: Updated placeholder and color background](./images/01-03-updated-placeholder-background.png)
 
 ## What I learned
 
