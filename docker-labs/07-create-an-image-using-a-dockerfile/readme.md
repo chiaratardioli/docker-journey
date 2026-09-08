@@ -68,11 +68,9 @@ I started a container from the new image:
 docker run -p 3000:3000 getting-started
 ```
 
-The application should now be available at:
+The review that the application is running at `http://localhost:3000`.
 
-```text
-http://localhost:3000
-```
+![Application running](./images/07-01-running-app.png)
 
 ## Results
 
