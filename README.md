@@ -12,6 +12,7 @@ Each lab documents what I learned and the commands I used.
 4. [Search and download an image](./docker-labs/04-search-and-download-image)
 5. [Docker Compose](./docker-labs/05-docker-compose)
 6. [Create a base image](docker-labs/06-create-a-base-image/readme.md)
+7. [Create an image using a Dockerfile](./docker-labs/07-create-an-image-using-a-dockerfile)
 
 
 ## Core Concepts
